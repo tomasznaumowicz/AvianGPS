@@ -1,1 +1,9 @@
-AvianGPS
+AvianGPS: Lightweight Sensing Device
+
+In this project we worked together with the Freie Universität Berlin, the University of Oxford and Microsoft Research. We extended the range of a typical Wireless Sensor Network beyond the boundaries of a stationary WSN deployment.
+
+We developed a lightweight backpack device for animals that is capable of monitoring the behavior and environment of individuals even when they leave the area of the study. Furthermore, each device is able to communicate over the radio with other backpack devices and with the deployed stationary WSN during an experiment. This enables continuous data synchronization without the need of recovering the backpack devices.
+
+The AvianGPS device in the current 4th revision is equipped with a GPS receiver, air pressure and temperature sensor, and an ambient light sensor. The board is driven by the MSP430F1612 microcontroller, uses additional local flash storage for log data and the CC1101 transceiver for radio communication
+
+To find out more about the AvianGPS project and its scientific goals visit the dedicated AvianGPS Project Site (not live yet..)
