@@ -1,0 +1,288 @@
+/**
+@mainpage
+
+@section mainpage_intro Documentation of the AvianGPS firmware
+
+AvianGPS is a platform for lightweight sensing devices developed in close collaboration with Microsoft Research, the Oxford University
+and the Freie Universitaet Berlin. More information about the scientific goals of this project can be found on the dedicated <a href="http://cst.imp.fu-berlin.de/projects/.html">AvianGPS Project Site (the site is not yet live!)</a>.  
+
+The released firmware contains support for many features required when developing software for AvianGPS platform. This release targets the AvianGPS V4 device.
+Take a look at the \ref Sys_Intro page for an overview of features included in this firmware.
+
+\image html environment_aviangps.png "Features of the AvianGPS platform."
+
+@section mainpage_howto How to use this documentation
+
+The main purpose of this documentation is to describe the System API. Only few internal features are
+described here. The internal (private) system and driver functions are documented in the source code
+and not exposed in this view. 
+
+This firmware comes with few example applications developed using the System API. All applications are stored
+in the @b Apps folder. Feel free to browse them and read their documentation. Also, review the \ref App_Intro
+page for more information about application development.
+
+@section license_sec_system License ("Modified BSD License")
+
+Copyright 2011 Freie Universitaet Berlin, Tomasz Naumowicz. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice, this list of
+conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright notice, this list
+of conditions and the following disclaimer in the documentation and/or other materials
+provided with the distribution.
+
+- Neither the name of the Freie Universitaet Berlin nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL Freie Universitaet Berlin BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+
+/**
+ * @defgroup 	Handlers Action Handlers
+ * 
+ * @brief		List of all actions handlers availale in the API
+ * 
+ * The System API and Drivers provide a set of Action Handlers which can be used to trigger
+ * execution of application code. For example a handler a handler for valid NMEA sentences could 
+ * be registered. 
+ */
+
+ 
+ /**
+  * @defgroup 	Commands Commands
+  * 
+  * @brief		List of all commands available in the API. Check the \ref CommandsIntro page for help on defining new commands.
+  * 
+  * The System API and Drivers provide a set of Commands which can be used to trigger
+  * actions within the firmware. The commands can be submitted either over the serial
+  * port or over the radio.
+  */
+  
+ /**
+  * @defgroup 	NetworkProtocols List of reserved Network Protocol IDs
+  * 
+  * @brief		List of reserved Network Protocol IDs
+  * 
+  * You should avoiding using Network Protocol IDs listed here as they are already in use somewhere
+  * in the firmware.
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+/**
+@page App_Intro Creating your own applications
+ 
+@section App_Intro_Intro		Introduction
+
+This firmware comes with few example applications. All applications are stored
+in the @b Apps folder. Feel free to browse them and read their documentation.
+
+The recommended order of reviewing example applications:
+ -# Empty
+ -# Example_Blink
+ -# Example_BlinkWithFSM
+ -# Example_Sense
+ 
+The applications Tracker and Base are the most advanced applications included in this release.
+We used them in a real deployment on Skomer Island in 2011. Those applications are included
+for reference purposes and were not designed as a learning material. Nevertheless, feel free
+to check them as well.
+
+@section App_Intro_FirstApp		How to create your own application
+
+Simply copy the contents of the @b Empty application to a new folder within the @b Apps directory.
+
+Next, review the \ref AppConfig.h and start working with the Application.c file.
+
+Call @b make from your application directory, this will compile the application. @b make @b flash will
+install the application on the attached AvianGPS device.
+
+
+  
+*/  
+
+
+
+
+
+/**
+@page Sys_Intro Selected features of the System and Drivers
+ 
+@section Sys_Intro_Intro		Introduction
+
+This firmware contains support for many features required when developing software
+for AvianGPS devices. Please browse through the Files section included in this documentation
+and look into them.
+
+Also, review the example applications as it
+will help you to understand how the System and Drivers play together.
+
+@section Sys_Intro_FirstApp		Selected features
+
+The System provides support for:
+ - \ref RTC.API.h "Real Time Clock"
+ - \ref Network.h "Radio communication"
+ - \ref Timers.API.h "Software timers" 
+ - \ref Logging.h "Debug output"
+ - \ref CommandsIntro "User commands"
+ - and more (take a look a the Files section)
+   
+The Drivers provide support for:
+ - \ref SCP1000-D01.API.h "Pressure and Temperature sensor"
+ - \ref Venus.API.h "GPS sensor" (\ref Handler_GPS_NMEA_GGA "NMEA GGA handler")
+ - \ref ADC_Devices.API.h "Battery and light level measurements"
+ - \ref LogEngine.API.h "Log storage"
+ 
+Also, an engine for implementation of \ref FSM_Intro "Finite State Machine" applications is provided as an example.
+  
+*/    
+  
+  
+  
+  
+  
+
+/**
+@page CommandsIntro Introduction to the commands engine
+ 
+@brief	Visit the \ref Commands module for description of available commands.
+ 
+@section CommandsIntroIntro		Introduction
+
+The System API provides an infrastructure for command processing. A commands is a function that can be called
+by a user at runtime by typing in the command's name via the debug console. Remote execution is supported
+as well, meaning, the user can invoke a command on a remote device as long as radio communication
+between the target device and the debugging device is possible.
+
+@section CommandsIntroUsage		Using commands
+
+Each commands has a name associated with it, e.g. the command that would provide the current
+uptime of the device has the string "uptime" associated as its name. To call the command locally,
+simply type in the command name in your debugt console:
+
+@code
+uptime
+[1:uptime] 00d 05:47:26
+@endcode
+
+The first line in this example contains the input typed in by the user. The second line in this 
+example contains the response. The content of the squre brackets informs about the origin
+of the response:
+ - 1 stands here for the node id: the device with the id 1 just replied
+ - uptime informs that this response is a reaction on the "uptime" command
+ 
+The text on the right contains the actual response from the command handler. In this example
+the device was turned on for 0 days, 5 hours, 47 minutes, and 26 seconds.
+
+The same command can be also executed remotely:
+@code
+@8 uptime
+[8:uptime] 00d 05:47:26
+@endcode
+
+Simply add the \b @ sign followed by the node id of the target device at the beginning of the line when invoking the command. The command
+engine will take care of data transmission to the target device, processing the command and finally transmitting and displaying
+of the response on your local device.
+
+For remote commands to work you need to have one of the devices attached to your computer in order to be able to use it
+as a gateway.
+ 
+@section CommandsIntroDefine	Implementing new commands
+
+In order to implement a new command the following information needs to be provided:
+ - Command name,
+ - Command help,
+ - Implementation of the command handler.
+ 
+Commands may be implemented in any *.c file that is processed during the compile action.
+ 
+In the following series of examples a simple command will be implemented. This command will
+accept two numbers as parameters and return sum of those two numbers.
+
+Following features of the command engine will be presented:
+ - Accessing the number of parameters provided
+ - Accessing parameters
+ - Providing a custom response
+
+Example implementation of a command:
+@code 
+COMMAND(add, "Adds two numbers", cmd_args) {
+	// check the number of arguments and continue only if two arguments were provided
+	if (cmd_args->ArgumentCount != 2)
+	 	return;
+
+	// access the arguments provided by the user
+	uint16_t first  = atoi(cmd_args->ArgumentArray[0]);
+	uint16_t second = atoi(cmd_args->ArgumentArray[1]);
+  
+	// compute the sum (please note: not check for overflows)
+	uint16_t sum = first + second;
+  
+	// print the response to the response buffer
+	snprintf(cmd_args->ResponseString, cmd_args->ResponseStringMaxLength, "Sum: %u", sum);
+}
+@endcode
+
+Use the COMMAND macro to register new commands. The command name is specified without quites, the
+optional help string is specified with quotes. The third name in the macro call is
+the name of command arguments \ref command_args_t containing all data relevant for command
+execution.
+
+First the number of arguments is queried and the execution of the command aborts when the
+number of arguments isn't equal to 2.
+
+Next, the code is accessing the arguments passed by the user and converting them to a unsigned integer. The sum is being computed
+
+Last, the \b ResponseString is being filled with a response of the command. The snprintf function accepts
+the maximum number of characters to write as the second parameter, here, the \b ResponseStringMaxLength is used
+which is provided by the command engine.
+@remarks It's crucial to be careful when writing to the \b ResponseString buffer. Writing too much to the \b ResponseString buffer could cause your application to crash. That's why the snprintf function is used in this example.
+*/ 
+
+
+
+
+
+/**
+@page FSM_Intro Introduction to the Finite State Machine engine
+ 
+@brief	This firmware comes with an implementation of a Finite State Machine (FSM). You can use this
+code to simplify application development.
+ 
+@section FSM_Intro_Intro		Introduction
+
+The FSM can simplify implementation of applications for this platform.
+We used it to built applications for the advanced scenario for Skomer Island 2011
+deployment. We implemented the Tracker logic and the Base Station logic using this FSM.
+We advise to review the documentation first, later our simple examples and optionally,
+if you're interested, the Tracker and Base Station implementations before building your own applications.
+
+@section FSM_Intro_Tutorial		Tutorial
+
+There is a tutorial available in the documentation of the \ref FSM.h file. Go to the \ref FSM.h "Tutorial".
+*/
+

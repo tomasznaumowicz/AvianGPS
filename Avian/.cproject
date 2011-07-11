@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject>
+<storageModule moduleId="org.eclipse.cdt.core.settings">
+<cconfiguration id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.870959353">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.870959353" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactExtension="" artifactName="MSB430H" buildProperties="" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.870959353" name="Debug" parent="net.sf.mspgcc.managedbuild.config.gnu.exe.debug" postannouncebuildStep="" postbuildStep="msp430-size MSB430H" preannouncebuildStep="" prebuildStep="">
+<folderInfo id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.870959353." name="/" resourcePath="">
+<toolChain id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.toolchain.239228286" name="Debug.toolchain" nonInternalBuilderId="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.builder" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.toolchain">
+<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.targetplatform.1295255929" isAbstract="false" name="Debug.targetplatform" osList="solaris,linux,hpux,aix,macosx,qnx,win32" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.targetplatform"/>
+<builder autoBuildTarget="update" buildPath="${workspace_loc:/Avian}" cleanBuildTarget="" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.builder.747281555" incrementalBuildTarget="" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Debug.builder" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.builder"/>
+<tool id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.c.compiler.1862894424" name="mspgcc GCC C Compiler" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.c.compiler">
+<option id="gnu.c.compiler.option.misc.mcu.922881047" name="MSP430 MCU type" superClass="gnu.c.compiler.option.misc.mcu" value="msp430x1612" valueType="string"/>
+<option id="gnu.c.compiler.option.include.paths.1836984830" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;C:\SkomerIDE\Backend\mspgcc\msp430\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\SkomerIDE\Backend\mspgcc\lib\gcc-lib\msp430\3.2.3\include&quot;"/>
+</option>
+</tool>
+<tool id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.cpp.compiler.707604212" name="mspgcc GCC C++ Compiler" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.cpp.compiler"/>
+<tool id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.c.linker.1970424278" name="mspgcc GCC C Linker" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.c.linker">
+<option id="gnu.c.link.option.misc.mcu.761697789" name="MSP430 MCU type" superClass="gnu.c.link.option.misc.mcu" value="msp430x1612" valueType="string"/>
+</tool>
+<tool id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.cpp.linker.446174766" name="mspgcc GCC C++ Linker" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.cpp.linker"/>
+<tool id="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.assembler.175211729" name="mspgcc GCC Assembler" superClass="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.net.sf.mspgcc.managedbuild.tool.gnu.assembler">
+<option id="gnu.both.asm.option.misc.mcu.492636553" name="MSP430 MCU type" superClass="gnu.both.asm.option.misc.mcu" value="msp430x1612" valueType="string"/>
+<option id="gnu.both.asm.option.include.paths.117737377" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;C:\SkomerIDE\Backend\mspgcc\msp430\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\SkomerIDE\Backend\mspgcc\lib\gcc-lib\msp430\3.2.3\include&quot;"/>
+</option>
+</tool>
+</toolChain>
+</folderInfo>
+</configuration>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="net.sf.mspgcc.managedbuild.config.gnu.exe.debug.870959353;net.sf.mspgcc.managedbuild.config.gnu.exe.debug.870959353.">
+<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+</cconfiguration>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<project id="msp430h.net.sf.mspgcc.managedbuild.target.gnu.exe.1948763331" name="mspgcc ELF (Gnu)" projectType="net.sf.mspgcc.managedbuild.target.gnu.exe"/>
+</storageModule>
+</cproject>
