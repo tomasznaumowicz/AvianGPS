@@ -1,6 +1,6 @@
 AvianGPS: Lightweight Sensing Device
 
-In this project we worked together with the Freie Universität Berlin, the University of Oxford and Microsoft Research. We extended the range of a typical Wireless Sensor Network beyond the boundaries of a stationary WSN deployment.
+In this project we worked together with the Freie Universitaet Berlin, the University of Oxford and Microsoft Research. We extended the range of a typical Wireless Sensor Network beyond the boundaries of a stationary WSN deployment.
 
 We developed a lightweight backpack device for animals that is capable of monitoring the behavior and environment of individuals even when they leave the area of the study. Furthermore, each device is able to communicate over the radio with other backpack devices and with the deployed stationary WSN during an experiment. This enables continuous data synchronization without the need of recovering the backpack devices.
 
