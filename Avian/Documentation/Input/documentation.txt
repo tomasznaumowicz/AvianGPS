@@ -4,7 +4,7 @@
 @section mainpage_intro Documentation of the AvianGPS firmware
 
 AvianGPS is a platform for lightweight sensing devices developed in close collaboration with Microsoft Research, the Oxford University
-and the Freie Universitaet Berlin. More information about the scientific goals of this project can be found on the dedicated <a href="http://cst.imp.fu-berlin.de/projects/.html">AvianGPS Project Site (the site is not yet live!)</a>.  
+and the Freie Universitaet Berlin. More information about the scientific goals of this project can be found on the dedicated <a href="http://cst.imp.fu-berlin.de/projects/environment/environment_aviangps.html">AvianGPS Project Site</a>.  
 
 The released firmware contains support for many features required when developing software for AvianGPS platform. This release targets the AvianGPS V4 device.
 Take a look at the \ref Sys_Intro page for an overview of features included in this firmware.

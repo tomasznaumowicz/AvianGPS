@@ -6,4 +6,4 @@ We developed a lightweight backpack device for animals that is capable of monito
 
 The AvianGPS device in the current 4th revision is equipped with a GPS receiver, air pressure and temperature sensor, and an ambient light sensor. The board is driven by the MSP430F1612 microcontroller, uses additional local flash storage for log data and the CC1101 transceiver for radio communication
 
-To find out more about the AvianGPS project and its scientific goals visit the dedicated AvianGPS Project Site (not live yet..)
+To find out more about the AvianGPS project and its scientific goals visit the dedicated AvianGPS Project Site at http://cst.imp.fu-berlin.de/projects/environment/environment_aviangps.html
